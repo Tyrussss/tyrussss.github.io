@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+/* style cơ bản cho website  */
+
+.header {
+    background-color: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background-image: url('images/bg1.jpg');
+    height: 80px;
+    width: 100%;
+    margin-top: -10;
+    align-content: center;
+    text-align: justify;
+    font-size: 30px;
+}
+
+.hcolumn1 {
+    float: left;
+    width: 100px;
+    padding: 5px;
+  }
+.hcolumn2 {
+    float: left;
+    vertical-align: 175px ;
+    width: 350px;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #ff0000;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #ff0000 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+
+  
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    align-items: center;
+  }
+
+
+#menu ul {
+    background-color: #ff0000;
+    list-style-type: none;
+    text-align: left;
+}
+
+#menu li {
+    color: #818181;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+}
+
+#a {
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+}
+
+#menu a:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+.sub-menu {
+    display: none;
+}
+
+#menu li {
+    position: relative;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+}
+
+#menu li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin-left: 0 !important;
+}
